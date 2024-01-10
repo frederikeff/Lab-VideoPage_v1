@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4568e2;
+    color: #fff;
+}
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the menu */
+    flex-grow: 1; /* Allow navbar to take up the available space */
+}
+
+.nav-link {
+    margin: auto 20px; 
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.nav-button {
+    padding: 10px 15px;
+    background: #efeaec;
+    border: none;
+    color: #4568e2;
+    border-radius: 50px; 
+    font-size: 16px; 
+    font-weight: 700;
+    margin-left: auto;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.hero {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #4568e2;
+    background-size: cover;
+    background-position: center;
+    font-size: 3rem;
+    font-weight: 800; 
+    text-align: center;
+}
+
+#h1 {
+    color: #c84f9c;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+#h2 { 
+    color: #2444c5;
+    text-decoration: none;
+    font-size: 2xl;
+    text-decoration: uppercase;
+    margin: 0;
+}
+
+#h3 {
+    color: #2444c5;
+    text-decoration: none;
+    font-size: x-large;
+    text-decoration: uppercase;
+}
+
+#h4 {
+    color: #c84f9c;
+    text-decoration: none;
+    font-size: 2xl;
+    text-decoration: uppercase;
+}
+
+
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 80px;
+    margin: 80px auto; 
+}
+
+.video-grid img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.video p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.3rem;
+    color: #333;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px; /* Add space between the image and the title */
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    overflow: hidden;
+    text-transform: uppercase;
+    line-height: 1.4em;
+}
+
+
+@media screen and (max-width: 600px) {
+    .video-grid {
+        grid-template-columns: 1fr; /* Ensure single column layout */
+        padding: 10px; /* Adjust padding as needed */
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .logo-link {
+        flex-grow: 1; /* Ensure logo takes available space */
+    }
+
+    nav-button {
+        display: none; /* Hide button on mobile */
+    }
+
+    .video p {
+        font-size: 0.5rem;
+        line-height: normal;
+        padding: 5px;
+        margin-top: 5px;
+    }
+    
+    .hero {
+        font-size: 1.5rem; /* Smaller font size for hero section */
+        padding: 20px; /* Add some padding */
+        height: auto;
+    }
+}
